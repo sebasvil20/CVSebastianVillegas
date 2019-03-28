@@ -48,8 +48,8 @@
 
       <section class="resume-section p-0 p-lg-5 d-flex align-items-center text-center " id="sobremi">
         <div class="w-100 pl-0">
-          <h1 class="mb-0">Sebastian
-            <span class="text-primary">Villegas</span>
+          <h1 class="mb-0 titulochido">Sebastian
+            <span class="text-primary titulochido2">Villegas</span>
           </h1>
           <div class="subheading mb-5">Medellin - Colombia · (+57) 305-319-0789 ·
             <a href="mailto:name@email.com">sebasvil20@gmail.com</a>
@@ -57,19 +57,19 @@
           <p class="lead mb-5">Apasionado por la programacion</p>
           <section>
             <a href="https://www.facebook.com/Hekizde" target="_blank">
-              <img src="icos/face72.ico" alt="">
+              <img src="icos/face72.ico" class="imagenReveal" alt="">
             </a>
             <a href="https://www.instagram.com/sebas_villegas20/" target="_blank">
-              <img src="icos/insta72.ico" alt="">
+              <img src="icos/insta72.ico" class="imagenReveal" alt="">
             </a>
             <a href="https://github.com/sebasvil20" target="_blank">
-              <img src="icos/github72.ico" alt="">
+              <img src="icos/github72.ico" class="imagenReveal" alt="">
             </a>
             <a href="whatsapp://send?phone=573053190789" target="_blank">
-              <img src="icos/whatsapp72.ico" alt="">
+              <img src="icos/whatsapp72.ico" class="imagenReveal" alt="">
             </a>
             <a href="https://twitter.com/Sebasti13919614?lang=es" target="_blank">
-              <img src="icos/twitter72.ico" alt="">
+              <img src="icos/twitter72.ico" class="imagenReveal" alt="">
             </a>
           </section>
         </div>
@@ -200,5 +200,44 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript">
+
+      ScrollReveal().reveal('.imagenReveal',
+        {
+          duration:2500,
+          origin: 'left'
+        })
+        ScrollReveal().reveal('.titulochido',
+          {
+            duration:2500,
+            origin: 'bottom',
+            distance: '200px'
+          })
+          ScrollReveal().reveal('.navbar',
+            {
+              duration: 1700,
+              origin: 'left',
+              distance: '100px'
+            })
+            ScrollReveal().reveal('.nav-link',
+              {
+                duration: 2100,
+                origin: 'right',
+                distance: '150px'
+              })
+              ScrollReveal().reveal('.img-fluid',
+                {
+                  duration: 2100,
+                  origin: 'right',
+                  distance: '150px'
+                })
+
+
+      </script>
+
+
+
   </body>
 </html>
